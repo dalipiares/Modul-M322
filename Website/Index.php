@@ -17,12 +17,26 @@
     </nav>
 </header>
 
+
+
+
+
 <main>
+
+    <form action="Index.php" method="get">
+        <label>
+            <input type="text" name="search" placeholder="Suche nach Büchern...">
+        </label>
+        <input type="submit" value="Suchen">
+    </form>
+
     <?php
     $servername = "localhost";
     $username = "root";
     $password = "";
     $dbname = "books";
+
+    $Such_kriterien = isset($_GET['search']) ? $_GET['search'] : '';
 
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
@@ -45,15 +59,15 @@
     // Calculate the total number of pages
     $total_pages = ceil($total_books / $items_per_page);
 
-    $sql = "SELECT id, katalog, nummer, kurztitle, kategorie, verkauft, kaufer, autor, title, sprache, foto, verfasser, zustand FROM buecher LIMIT $items_per_page OFFSET $offset";
+    $sql = "SELECT id, katalog, nummer, kurztitle, kategorie, verkauft, kaufer, autor, title, sprache, foto, verfasser, zustand FROM buecher WHERE kurztitle LIKE '%$Such_kriterien%' LIMIT $items_per_page OFFSET $offset";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
         // output data of each row
         while($row = $result->fetch_assoc()) {
             echo '<div class="book-item">';
-            echo '<img src="/Bilder/cover.jpg" alt="' . $row["foto"] . '" alt="' . $row["title"] . '">';
-            echo '<h2>' . $row["title"] . '</h2>';
+            echo '<img src="/Bilder/cover.jpg" alt="' . $row["foto"] . '" alt="' . $row["kurztitle"] . '">';
+            echo '<h2>' . $row["kurztitle"] . '</h2>'; // Änderung hier
             echo '<div class="book-details">';
             echo '<p>' . $row["kurztitle"] . '</p>';
             echo '<p>Autor: ' . $row["autor"] . '</p>';
@@ -65,6 +79,10 @@
     } else {
         echo "0 results";
     }
+
+
+
+
 
     echo '<div class="pagination">';
 
