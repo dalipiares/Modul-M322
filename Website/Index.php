@@ -54,10 +54,12 @@
             echo '<div class="book-item">';
             echo '<img src="' . $row["foto"] . '" alt="' . $row["title"] . '">';
             echo '<h2>' . $row["title"] . '</h2>';
+            echo '<div class="book-details">';
             echo '<p>' . $row["kurztitle"] . '</p>';
             echo '<p>Autor: ' . $row["autor"] . '</p>';
             echo '<p>Kategorie: ' . $row["kategorie"] . '</p>';
             echo '<p>Sprache: ' . $row["sprache"] . '</p>';
+            echo '</div>';
             echo '</div>';
         }
     } else {
