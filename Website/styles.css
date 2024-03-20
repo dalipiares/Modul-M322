@@ -1,0 +1,146 @@
+/* CSS-Datei */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+main {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+
+
+.book-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.book-item h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.book-item p {
+    color: #666;
+}
+
+.book-item img {
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+.page-number {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.page-number:hover {
+    background-color: #e9e9e9;
+}
+
+
+.page-arrow {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.page-arrow:hover {
+    background-color: #666;
+}
+
+
+.current-page {
+    background-color: #333;
+    color: #ffffff;
+}
+
+
+
+
+
+
+footer {
+    position: relative;
+    width: 100%;
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-links li a {
+    color: #ffffff;
+    text-decoration: none;
+}
