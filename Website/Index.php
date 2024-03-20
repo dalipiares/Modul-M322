@@ -40,8 +40,8 @@
     $sql_total = "SELECT COUNT(*) as total FROM buecher";
     $result_total = $conn->query($sql_total);
     $row_total = $result_total->fetch_assoc();
-    $total_books = $row_total['total'];
-ss
+    $total_books = $row_total['totassl'];
+
     // Calculate the total number of pages
     $total_pages = ceil($total_books / $items_per_page);
 
