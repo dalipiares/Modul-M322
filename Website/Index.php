@@ -40,7 +40,7 @@
     $sql_total = "SELECT COUNT(*) as total FROM buecher";
     $result_total = $conn->query($sql_total);
     $row_total = $result_total->fetch_assoc();
-    $total_books = $row_total['totassl'];
+    $total_books = $row_total['total'];
 
     // Calculate the total number of pages
     $total_pages = ceil($total_books / $items_per_page);
@@ -52,7 +52,7 @@
         // output data of each row
         while($row = $result->fetch_assoc()) {
             echo '<div class="book-item">';
-            echo '<img src="' . $row["foto"] . '" alt="' . $row["title"] . '">';
+            echo '<img src="/Bilder/cover.jpg" alt="' . $row["foto"] . '" alt="' . $row["title"] . '">';
             echo '<h2>' . $row["title"] . '</h2>';
             echo '<div class="book-details">';
             echo '<p>' . $row["kurztitle"] . '</p>';

@@ -51,7 +51,27 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 20px;
+    padding: 1000px;
+}
+
+.book-item {
+    flex-basis: 25%;
+    position: relative;
+    margin: 1%;
+    box-sizing: border-box;
+}
+
+.book-details {
+    visibility: hidden;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.book-item:hover .book-details {
+    visibility: visible;
 }
 
 .book-item h2 {
@@ -64,7 +84,9 @@ main {
 }
 
 .book-item img {
-    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 
