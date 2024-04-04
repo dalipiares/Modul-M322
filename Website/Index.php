@@ -38,10 +38,10 @@
 
     $Such_kriterien = isset($_GET['search']) ? $_GET['search'] : '';
 
-    // Create connection
+    // erstellt die Verbindung
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    // Check connection
+    // überprüft die Verbindung
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
@@ -50,24 +50,24 @@
     $current_page = isset($_GET['page']) ? $_GET['page'] : 1;
     $offset = ($current_page - 1) * $items_per_page;
 
-    // Get the total number of books
+    //rechnet die anzahl bücher aus
     $sql_total = "SELECT COUNT(*) as total FROM buecher";
     $result_total = $conn->query($sql_total);
     $row_total = $result_total->fetch_assoc();
     $total_books = $row_total['total'];
 
-    // Calculate the total number of pages
+    // rechnet die totale seiten anzahl aus
     $total_pages = ceil($total_books / $items_per_page);
 
-    $sql = "SELECT id, katalog, nummer, kurztitle, kategorie, verkauft, kaufer, autor, title, sprache, foto, verfasser, zustand FROM buecher WHERE kurztitle LIKE '%$Such_kriterien%' LIMIT $items_per_page OFFSET $offset";
+    $sql = "SELECT id, katalog, nummer, kurztitle, kategorie, verkauft, kaufer, autor, title, sprache, foto, verfasser, zustand FROM buecher WHERE kurztitle LIKE '$Such_kriterien%' LIMIT $items_per_page OFFSET $offset";
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-        // output data of each row
+        // Bilder Reihen
         while($row = $result->fetch_assoc()) {
             echo '<div class="book-item">';
             echo '<img src="/Bilder/cover.jpg" alt="' . $row["foto"] . '" alt="' . $row["kurztitle"] . '">';
-            echo '<h2>' . $row["kurztitle"] . '</h2>'; // Änderung hier
+            echo '<h2>' . $row["kurztitle"] . '</h2>';
             echo '<div class="book-details">';
             echo '<p>' . $row["kurztitle"] . '</p>';
             echo '<p>Autor: ' . $row["autor"] . '</p>';
@@ -86,17 +86,17 @@
 
     echo '<div class="pagination">';
 
-    // Calculate the start and end page numbers
+    // Rechnet die Start und End Seiten aus
     $start_page = max(1, $current_page - 5);
     $end_page = min($total_pages, $current_page + 5);
 
-    // Add a "previous" link
+    // fügt ein "previous" link hinzu
     if ($current_page > 1) {
         $prev_page = max(1, $current_page - 15);
         echo "<a class=\"page-arrow\" href=\"$_SERVER[PHP_SELF]?page=$prev_page\"><<</a>";
     }
 
-    // Display page numbers
+    // fügt die Seitenzahlen hinzu
     for ($i = $start_page; $i <= $end_page; $i++) {
         if ($i == $current_page) {
             echo "<span class=\"page-number current-page\">$i</span>";
@@ -105,7 +105,7 @@
         }
     }
 
-    // Add a "next" link
+    // fügt ein "next" link hinzu
     if ($current_page < $total_pages) {
         $next_page = min($total_pages, $current_page + 15);
         echo "<a class=\"page-arrow\" href=\"$_SERVER[PHP_SELF]?page=$next_page\">>></a>";
