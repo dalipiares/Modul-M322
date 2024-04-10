@@ -1,23 +1,25 @@
-/* CSS-Datei */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* CSS-Datei */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(to bottom, #E6F4FF, #AAEEFF) no-repeat;
 }
 
 header {
-    background-color: #333;
-    color: #cccccc;
-    padding: 10px 0;
+    background-color: #bbc5ff;
+    border-radius: 2em;
 }
 
-header h1 {
-    margin: 0;
-    padding: 0 20px;
+nav img {
+    height: 5em;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -29,7 +31,10 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #6470B6;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -40,6 +45,64 @@ nav ul li a:hover {
 
 
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropbtn {
+    font-size: 1em;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    color: #6470B6;
+    height: 2.5em;
+    padding: 0.6em;
+    border: #272c48;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    background-color: #BBC5FF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-image: url("Bilder/filter-icon.png");
+    background-size: 1.5em;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-right: 3em;
+}
+
+.dropbtn:hover {
+    background-color: #666;
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 80%; /* Positioniert das Dropdown-Menü direkt unter dem Button */
+    left: 0; /* Positioniert das Dropdown-Menü am linken Rand des Buttons */
+    min-width: 300px;
+    z-index: 1;
+}
+
+.dropdown-content label {
+    color: #6470B6;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    width: 9em;
+    height: 1.5em;
+    border-radius: 5px;
+    border: 1px solid #a6b4e0;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.1);
+    background-color: #BBC5FF;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 
 
@@ -48,28 +111,101 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
-    background-color: #ffffff;
+    background: linear-gradient(to bottom, #E6F4FF, #AAEEFF);
 }
-
-
-
-
 
 
 /* Styles für formular */
+
 form {
-    margin-bottom: 20px;
+    color: #6470B6;
+    padding: 20px; /* Fügt Polsterung hinzu, um das Formular größer zu machen */
+    margin: 10px; /* Erstellt einen Abstand um die Ränder */
+    overflow: visible; /* Stellt sicher, dass die untergeordneten Elemente nicht aus dem runden Formular herauslaufen */
+    font-size: 1em;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
 }
 
+form .found_books {
+    color: #9EB3CF;
+    margin: 1em;
+    font-family: 'Segoe UI', sans-serif;
+    font-style: italic;
+}
+
+
+form label, .dropdown {
+    width: 4em;
+    height: 2.5em;
+    margin-right: 1em;
+    white-space: nowrap;
+}
+
+
+
+
 form input[type="text"] {
-    padding: 5px;
-    width: 300px;
+    font-size: 1em;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    color: #6470B6;
+    width: 20em;
+    height: 2.5em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    background-color: #BBC5FF;
+    background-image: url('Bilder/search-icon.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 2em;
+
 }
 
 form input[type="submit"] {
-    padding: 5px 10px;
-    margin-left: 10px;
+    font-size: 1em;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    color: #6470B6;
+    width: 6em;
+    height: 2.5em;
+    padding: 5px;
+    border: #272c48;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    background-color: #BBC5FF;
+    margin-left: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
 }
+
+form input[type="submit"]:hover {
+    background-color: #666;
+}
+
+form select {
+    font-size: 1em;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: bold;
+    color: #929BD3;
+    width: 10em;
+    height: 2.5em;
+    padding: 1px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+    background-color: #BBC5FF;
+    margin: 0.5em;
+}
+
+
+
+
+
 
 
 
@@ -92,20 +228,16 @@ form input[type="submit"] {
     margin: 20px 10px 20px 10px;
     box-sizing: border-box;
     position: relative;
-    background-color: #fff;
+    background: linear-gradient(to bottom, #A9C0FD, #51A0DC);
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid black;
+    border-radius: 1.5em;
     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5);
     transition: 0.3s;
     font-family: 'Arial', sans-serif;
+    z-index: 0;
 }
 
-@media screen and (max-width: 1500px) {
-    .book-item {
-        width: calc(20% - 20px);
-    }
-}
 
 @media screen and (max-width: 1200px) {
     .book-item {
@@ -132,6 +264,7 @@ form input[type="submit"] {
 }
 
 .book-item img {
+    border-radius: 1.5em;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -185,6 +318,7 @@ form input[type="submit"] {
     color: #666;
     font-size: 0.9em;
 }
+
 
 
 

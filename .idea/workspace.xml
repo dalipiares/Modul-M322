@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47f3d957-3fa5-4dc8-87e4-28aadd9917ef" name="Changes" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/Bilder/filter-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/Bilder/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/Bilder/search-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/Bilder/sort-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/book_DB.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Website/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/00000000000.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copilot/chatSessions/blobs/version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Website/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Website/Index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Website/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/Website/styles.css" afterDir="false" />
@@ -52,33 +60,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;app.teamhub.selectedTeam&quot;: &quot;github.com/BonTrex/M322_lol&quot;,
-    &quot;app.teamhub.trackedBranches&quot;: &quot;-luq1ju/main&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "app.teamhub.selectedTeam": "github.com/BonTrex/M322_lol",
+    "app.teamhub.trackedBranches": "-luq1ju/main",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/aresd/OneDrive/Dokumente/INFORMATIK/M322_lol/Website/Bilder",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\aresd\OneDrive\Dokumente\INFORMATIK\M322_lol\Website\Bilder" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\aresd\OneDrive\Dokumente\INFORMATIK\M322_lol\Website" />
     </key>
@@ -106,7 +118,14 @@
       <workItem from="1710937580323" duration="1459000" />
       <workItem from="1710939929281" duration="7174000" />
       <workItem from="1710948374147" duration="2228000" />
-      <workItem from="1712236439756" duration="361000" />
+      <workItem from="1712236439756" duration="1421000" />
+      <workItem from="1712345706821" duration="5539000" />
+      <workItem from="1712480619381" duration="10187000" />
+      <workItem from="1712500531163" duration="21814000" />
+      <workItem from="1712579624408" duration="4457000" />
+      <workItem from="1712652703933" duration="7572000" />
+      <workItem from="1712669193481" duration="563000" />
+      <workItem from="1712746515601" duration="9719000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <option name="closed" value="true" />
@@ -164,11 +183,30 @@
       <option name="project" value="LOCAL" />
       <updated>1710947630149</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update">
+      <option name="closed" value="true" />
+      <created>1712236847763</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712236847764</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
