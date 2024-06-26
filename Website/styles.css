@@ -1,47 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* CSS-Datei */
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+
+html, body {
+    min-width: 800px;
+    min-height: 58em; /* Setzt die minimale Höhe */
     background: linear-gradient(to bottom, #E6F4FF, #AAEEFF) no-repeat;
+
 }
 
-header {
-    background-color: #bbc5ff;
-    border-radius: 2em;
-}
-
-nav img {
-    height: 5em;
-}
-
-nav {
+body {
     display: flex;
+    flex-direction: column;
     align-items: center;
-}
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: #6470B6;
+    justify-content: center;
     font-family: 'Segoe UI', sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    text-decoration: none;
 }
 
 
-nav ul li a:hover {
-    color: #cccccc;
-}
 
 
 
@@ -110,8 +85,12 @@ nav ul li a:hover {
 
 
 main {
-    padding: 20px;
-    background: linear-gradient(to bottom, #E6F4FF, #AAEEFF);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+
 }
 
 
@@ -119,7 +98,7 @@ main {
 
 form {
     color: #6470B6;
-    padding: 20px; /* Fügt Polsterung hinzu, um das Formular größer zu machen */
+    padding-top: 7em; /* Fügt Polsterung hinzu, um das Formular größer zu machen */
     margin: 10px; /* Erstellt einen Abstand um die Ränder */
     overflow: visible; /* Stellt sicher, dass die untergeordneten Elemente nicht aus dem runden Formular herauslaufen */
     font-size: 1em;
@@ -127,7 +106,9 @@ form {
     font-weight: bold;
     border: none;
     border-radius: 5px;
+
 }
+
 
 form .found_books {
     color: #9EB3CF;
@@ -147,7 +128,7 @@ form label, .dropdown {
 
 
 
-form input[type="text"] {
+form .suche  {
     font-size: 1em;
     font-family: 'Segoe UI', sans-serif;
     font-weight: bold;
@@ -234,8 +215,14 @@ form select {
     border-radius: 1.5em;
     box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.5);
     transition: 0.3s;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     z-index: 0;
+}
+
+
+.book-details-link {
+    text-decoration: none;
+    color: #333;
 }
 
 
@@ -291,7 +278,7 @@ form select {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0.5em 0.5em 2em 0.6em rgba(0, 0, 0, 0.6);
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     animation: fadeout 0.2s;
     transition: visibility 0.2s;
 }
@@ -330,6 +317,7 @@ form select {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-bottom: 1em;
 }
 
 
@@ -367,30 +355,233 @@ form select {
     color: #ffffff;
 }
 
-footer {
-    position: relative;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
     width: 100%;
-    background-color: #333;
-    color: #cccccc;
-    text-align: center;
-    padding: 10px 0;
+    margin: auto;
+    height: 900px;
+    
+    
+    
+    
+    
 }
 
-.footer-content p {
-    margin: 0;
+.book-card {
+    display: flex;
+    flex-direction: row; 
+    background-image: linear-gradient(to bottom, #a8c0fd, #53a1dd); /* Farbverlauf von oben nach unten */
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    margin-top: 50px;    
+    width: auto;
+    height: 640px;
+    outline: 1.0px   outset  rgb(0, 0, 0);
+
+    
+    
+
+
+    
 }
 
-.footer-links {
-    list-style-type: none;
-    padding: 0;
+.Images2 {
+    order: 1; 
+    
 }
 
-.footer-links li {
-    display: inline;
-    margin-right: 10px;
+.Infos2 {
+    order: 2;
+    padding-left: 0;
+    margin-left: 0; 
+}
+.book-title {
+    font-size: 50px;
+    color: #ffe6f4;
+    margin-bottom: 10px;
+    padding-top: 0px;
+    padding-left: 60px;
+    font-weight: bold;
+    margin-top: 13px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.176);
+    
+
+    
 }
 
-.footer-links li a {
+.book-author{
+    padding-left: 40px;
+    font-size: 35px;
+    color: #ffe7a7;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-top: -3px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.176);
+
+    
+}
+
+
+.book-description {
+    font-size: 27px;
     color: #ffffff;
-    text-decoration: none;
+    padding-left: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.176);
+
+
 }
+
+
+.book-cover {
+  
+    overflow: hidden; /* Add this line */
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.324));
+}
+
+
+
+
+.book-cover img {
+    width: 350px;
+    
+    height: auto;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 40px;
+    margin-left: 20px;
+    border-radius: 30px;
+    animation: fadein 2s;
+
+
+
+    
+  
+   
+}
+
+.book-info {
+    order: 3;
+   
+}
+
+
+
+.title-container {
+    transform: translateX(-20px); 
+}
+
+
+
+
+
+
+.genre-wrapper {
+    background-color: #d072ae; 
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    outline: 1.5px   outset  rgb(0, 0, 0);
+
+
+    margin-top: 700px;
+    margin-left: 720px;
+}
+
+.genre-label {
+    font-size: 35px;
+    color: white; 
+    font-weight: bold;
+}
+
+.genre-name {
+    outline: 1.5px   outset  rgb(0, 0, 0);
+
+    font-size: 35px;
+    background-color: #ffb6df; 
+    border-radius: 5px;
+    padding: 2px 8px;
+    color: white; 
+    font-weight: bold;
+}
+
+
+
+.star-rating {
+    font-size: 50px;
+    color: rgb(255, 208, 0);
+    align-items: center;
+
+    padding-left: 65px;
+
+    padding-top: 20px;
+
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.176);
+    -webkit-text-stroke: 1.5px black;
+
+  }
+  
+  .author-name {
+    text-decoration: underline; 
+}
+
+

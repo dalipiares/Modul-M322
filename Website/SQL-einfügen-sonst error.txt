@@ -1,0 +1,31 @@
+-- Erstellen der users Tabelle
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(45) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    admin TINYINT(1) NOT NULL DEFAULT 0
+);
+
+-- Einfügen von 20 Users
+INSERT INTO users (username, password, email, admin) VALUES
+('Alice', '$2y$10$eImiTXuWVxfM37uY4JANjQ.lVdFBDnO/o5Wfzz6NRf7RP4gEex/eq', 'alice@example.com', 0),
+('Bob', '$2y$10$eImiTXuWVxfM37uY4JANjQ.lVdFBDnO/o5Wfzz6NRf7RP4gEex/eq', 'bob@example.com', 0),
+('Charlie', '$2y$10$eImiTXuWVxfM37uY4JANjQ.lVdFBDnO/o5Wfzz6NRf7RP4gEex/eq', 'charlie@example.com', 0),
+('David', '$2y$10$eImiTXuWVxfM37uY4JANjQ.lVdFBDnO/o5Wfzz6NRf7RP4gEex/eq', 'david@example.com', 0),
+('Eve', '$2y$10$eImiTXuWVxfM37uY4JANjQ.lVdFBDnO/o5Wfzz6NRf7RP4gEex/eq', 'eve@example.com', 0),
+('Frank', '$2y$10$eImiTXuWVxfM37uY4JANjQ.lVdFBDnO/o5Wfzz6NRf7RP4gEex/eq', 'frank@example.com', 0),
+('Grace', '$2y$10$eImiTXuWVxfM37uY4JANjQ.lVdFBDnO/o5Wfzz6NRf7RP4gEex/eq', 'grace@example.com', 0),
+('Heidi', '$2y$10$eImiTXuWVxfM37uY4JANjQ.lVdFBDnO/o5Wfzz6NRf7RP4gEex/eq', 'heidi@example.com', 0),
+('Ivan', '$2y$10$eImiTXuWVxfM37uY4JANjQ.lVdFBDnO/o5Wfzz6NRf7RP4gEex/eq', 'ivan@example.com', 0),
+('Judy', '$2y$10$eImiTXuWVxfM37uY4JANjQ.lVdFBDnO/o5Wfzz6NRf7RP4gEex/eq', 'judy@example.com', 0),
+('Mallory', '$2y$10$eImiTXuWVxfM37uY4JANjQ.lVdFBDnO/o5Wfzz6NRf7RP4gEex/eq', 'mallory@example.com', 0),
+('Niaj', '$2y$10$eImiTXuWVxfM37uY4JANjQ.lVdFBDnO/o5Wfzz6NRf7RP4gEex/eq', 'niaj@example.com', 0),
+('Olivia', '$2y$10$eImiTXuWVxfM37uY4JANjQ.lVdFBDnO/o5Wfzz6NRf7RP4gEex/eq', 'olivia@example.com', 0),
+('Peggy', '$2y$10$eImiTXuWVxfM37uY4JANjQ.lVdFBDnO/o5Wfzz6NRf7RP4gEex/eq', 'peggy@example.com', 0),
+('Sybil', '$2y$10$eImiTXuWVxfM37uY4JANjQ.lVdFBDnO/o5Wfzz6NRf7RP4gEex/eq', 'sybil@example.com', 0),
+('Trent', '$2y$10$eImiTXuWVxfM37uY4JANjQ.lVdFBDnO/o5Wfzz6NRf7RP4gEex/eq', 'trent@example.com', 0),
+('Victor', '$2y$10$eImiTXuWVxfM37uY4JANjQ.lVdFBDnO/o5Wfzz6NRf7RP4gEex/eq', 'victor@example.com', 0),
+('Walter', '$2y$10$eImiTXuWVxfM37uY4JANjQ.lVdFBDnO/o5Wfzz6NRf7RP4gEex/eq', 'walter@example.com', 0),
+('Xena', '$2y$10$eImiTXuWVxfM37uY4JANjQ.lVdFBDnO/o5Wfzz6NRf7RP4gEex/eq', 'xena@example.com', 0),
+('Yvonne', '$2y$10$eImiTXuWVxfM37uY4JANjQ.lVdFBDnO/o5Wfzz6NRf7RP4gEex/eq', 'yvonne@example.com', 0);
